@@ -1,8 +1,15 @@
+"use client"
 import { cn } from "@/utils/cn";
+import { useState } from "react";
+
+import Lottie from "react-lottie";
 
 import { BackgroundGradientAnimation } from "./GradientBg";
-import { Globe } from "./Globe";
 import { GlobeDemo } from "./GridGlobe";
+import MagicButton from "./MagicButton";
+
+import animationData from '@/data/conffeti.json';
+import { IoCopyOutline } from "react-icons/io5";
 
 export const BentoGrid = ({
     className,
@@ -43,10 +50,17 @@ export const BentoGridItem = ({
     titleClassName?: string
     spareImg?: string
 }) => {
+    const [copied, setCopied] = useState(false);
+
+    const handleCopy = () => {
+        navigator.clipboard.writeText('stoychev.nas@gmail.com');
+        setCopied(true);
+    }
+
     return (
         <div
             className={cn(
-                "row-span-1 relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4",
+                "row-span-1 relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 border border-white/[0.1]",
                 className
             )}
             style={{
@@ -54,7 +68,7 @@ export const BentoGridItem = ({
                 backgroundColor: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(93,108,111,1) 35%, rgba(0,212,255,1) 100%)",
             }}
         >
-            <div className={`${id === 6} && 'flex justify-center h-full`}>
+            <div className={`${id === 6 && 'flex justify-center'} h-full`}>
                 <div className="w-full h-full absolute">
                     {img && (
                         <img
@@ -75,7 +89,7 @@ export const BentoGridItem = ({
                 </div>
                 {id === 6 && (
                     <BackgroundGradientAnimation>
-                        <div className="absolute z-50 flex items-center justify-center text-white font-bold" />
+                        {/* <div className="absolute z-50 flex items-center justify-center text-white font-bold" /> */}
                     </BackgroundGradientAnimation>
                 )}
 
@@ -102,7 +116,39 @@ export const BentoGridItem = ({
                                         </span>
                                     )
                                 )}
+                                <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
                             </div>
+                            <div className="flex flex-col gap-3 lg:gap-8">
+                                <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
+                                {['Python', 'MongoDB', 'Azure'].map(
+                                    (item) => (
+                                        <span key={item} className="py-2 lg:py4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
+                                            {item}
+                                        </span>
+                                    )
+                                )}
+                            </div>
+                        </div>
+                    )}
+                    {id === 6 && (
+                        <div className="mt-5 relative">
+                            <div className={`absolute -bottom-5 right-0`}>
+                                <Lottie options={{
+                                    loop: copied,
+                                    autoplay: copied,
+                                    animationData,
+                                    rendererSettings: {
+                                        preserveAspectRatio: 'xMidYMid slice'
+                                    }
+                                }} />
+                            </div>
+                            <MagicButton
+                                title={copied ? 'Email copied' : 'Copy my email'}
+                                icon={<IoCopyOutline />}
+                                position="left"
+                                otherClasses="!bg-[#161a31]"
+                                handleClick={handleCopy}
+                            />
                         </div>
                     )}
                 </div>
