@@ -22,7 +22,7 @@ const Popup = ({ handleClosePopup }: { handleClosePopup: () => void }) => {
                         Welcome to my Website
                     </h1>
                     <p className="text-wrap">
-                        Thank you for visiting. I'am currently in the process of building something amazing,
+                        Thank you for visiting. I&apos;am currently in the process of building something amazing,
                         and I appreciate your patience as I work to complete the site.
                     </p>
                 </div>
@@ -32,7 +32,7 @@ const Popup = ({ handleClosePopup }: { handleClosePopup: () => void }) => {
                         What to Expect
                     </h2>
                     <div className="text-wrap">
-                        While my site is under construction, I'am diligently working behind the scenes
+                        While my site is under construction, I&apos;am diligently working behind the scenes
                         to bring you a fantastic experience with the following features:
                     </div>
                     <p className="pl-3">- Informative Content</p>
@@ -45,7 +45,7 @@ const Popup = ({ handleClosePopup }: { handleClosePopup: () => void }) => {
                         Stay Tuned
                     </h2>
                     <div className="text-wrap">
-                        I can't wait to share my progress with you. In the meantime, here are a few things you can do:
+                        I can&apos;t wait to share my progress with you. In the meantime, here are a few things you can do:
                     </div>
                     <p className="pl-3">- Follow Me: Stay connected with me on
                         <a href={LINKEDIN} target="_blank" className="text-purple cursor-pointer font-bold"> LinkedIn </a>
