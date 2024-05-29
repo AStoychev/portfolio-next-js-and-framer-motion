@@ -9,7 +9,7 @@ import { GlobeDemo } from "./GridGlobe";
 import MagicButton from "./MagicButton";
 
 import animationData from '@/data/conffeti.json';
-import { IoCopyOutline } from "react-icons/io5";
+import { IoCopyOutline, IoCheckmarkSharp } from "react-icons/io5";
 
 export const BentoGrid = ({
     className,
@@ -56,6 +56,7 @@ export const BentoGridItem = ({
         navigator.clipboard.writeText('stoychev.nas@gmail.com');
         setCopied(true);
     }
+
 
     return (
         <div
@@ -136,7 +137,7 @@ export const BentoGridItem = ({
                                 <Lottie options={{
                                     loop: copied,
                                     autoplay: copied,
-                                    animationData,
+                                    animationData: copied && animationData,
                                     rendererSettings: {
                                         preserveAspectRatio: 'xMidYMid slice'
                                     }
@@ -144,7 +145,7 @@ export const BentoGridItem = ({
                             </div>
                             <MagicButton
                                 title={copied ? 'Email copied' : 'Copy my email'}
-                                icon={<IoCopyOutline />}
+                                icon={copied ? <IoCheckmarkSharp color="#ADFF2F"/> : <IoCopyOutline />}
                                 position="left"
                                 otherClasses="!bg-[#161a31]"
                                 handleClick={handleCopy}

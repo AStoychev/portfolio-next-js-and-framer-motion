@@ -29,7 +29,7 @@ const Hero = () => {
                     />
 
                     <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-                        Hi, I&apos;m Atanas a Full-Stack Developer based in Bulgaria.
+                        Hi, I&apos;m Atanas a Full-Stack and Mobile Developer based in Bulgaria.
                     </p>
 
                     <a href="#about">

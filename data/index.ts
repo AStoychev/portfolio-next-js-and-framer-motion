@@ -107,33 +107,33 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Collaborating with Atanas was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Atanas's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Atanas is the ideal partner.",
+    name: "Nick Lal",
+    title: "Director of Nick Art",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Collaborating with Atanas was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Atanas's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Atanas is the ideal partner.",
+      name: "Nick Lal",
+      title: "Director of Nick Art",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Collaborating with Atanas was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Atanas's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Atanas is the ideal partner.",
+      name: "Nick Lal",
+      title: "Director of Nick Art",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Collaborating with Atanas was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Atanas's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Atanas is the ideal partner.",
+      name: "Nick Lal",
+      title: "Director of Nick Art",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Collaborating with Atanas was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Atanas's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Atanas is the ideal partner.",
+      name: "Nick Lal",
+      title: "Director of Nick Art",
   },
 ];
 
@@ -205,13 +205,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: 'https://github.com/AStoychev'
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/link.svg",
+    link: 'https://www.linkedin.com/in/atanas-stoychev-9475391ba/?original_referer='
   },
   {
     id: 3,
-    img: "/link.svg",
+    img: "/website.svg",
+    link: 'https://astoychev.onrender.com/'
   },
 ];

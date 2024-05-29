@@ -13,7 +13,7 @@ const Approach = () => {
             <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
                 <Card
                 title="Planning & Strategy"
-                icon={<AceternityIcon order="Phase 1"/>}
+                icon={<AceternityIcon order="First Step"/>}
                 desc="We'll collaborate to map out your website's goals, target audience, 
                 and key functionalities. We'll discuss things like site structure, 
                 navigation, and content requirements."
@@ -25,7 +25,7 @@ const Approach = () => {
                 </Card>
                 <Card
                 title="Development & Progress Update"
-                icon={<AceternityIcon order="Phase 2" />}
+                icon={<AceternityIcon order="Second Step" />}
                 desc="Once we agree on the plan, I cue my lofi playlist and dive into
                 coding. From initial sketches to polished code, I keep you updated
                 every step of the way."
@@ -43,7 +43,7 @@ const Approach = () => {
                 </Card>
                 <Card
                 title="Development & Launch"
-                icon={<AceternityIcon order="Phase 3" />}
+                icon={<AceternityIcon order="Third Step" />}
                 desc="This is where the magic happens! Based on the approved design, 
                 I'll translate everything into functional code, building your website
                 from the ground up.">
@@ -116,7 +116,7 @@ const AceternityIcon = ({ order }: { order: string }) => {
         <div>
             <button className="p-[3px] relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
-                <div className="px-5 py-2  bg-black rounded-[6px] relative group transition duration-200 text-white text-2xl font-bold hover:bg-transparent">
+                <div className="px-5 py-2  bg-black rounded-[6px] relative group transition duration-200 text-white text-2xl font-bold hover:bg-transparent font-play">
                     {order}
                 </div>
             </button>

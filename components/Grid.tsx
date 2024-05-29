@@ -3,9 +3,9 @@ import { BentoGrid, BentoGridItem } from './ui/BentoGrid';
 
 import { gridItems } from '@/data';
 
-const Grid = () => {
+const Grid = ({handleMouseOver}:{handleMouseOver : () => void}) => {
     return (
-        <section id="about">
+        <section id="about" onMouseEnter={handleMouseOver}>
             <BentoGrid className="w-full py-20">
                 {gridItems.map(({id, title, description,
                 className, img, imgClassName, titleClassName,
