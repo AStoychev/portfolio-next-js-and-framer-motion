@@ -10,11 +10,11 @@ const Popup = ({ handleClosePopup }: { handleClosePopup: () => void }) => {
     return (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
             <div className="
-        w-1/3 bg-gradient-to-r from-cyan-900 to-blue-900
+        bg-gradient-to-r from-cyan-900 to-blue-900
         border-2 border-emerald-900 rounded-xl
         opacity-100 overflow-hidden p-3
         bg-white shadow-lg
-        mx-auto
+        w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl mx-4 sm:mx-6 lg:mx-8
         ">
 
                 <div>
